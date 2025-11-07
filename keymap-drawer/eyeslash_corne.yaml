@@ -860,7 +860,7 @@ combos:
   l: [OSL R]
 - p: [14, 18]
   k: {t: gaming_toggle, h: toggle}
-  l: [SYMBOL]
+  l: [QWERTY]
 - p: [14, 18]
   k: {t: QWERTY, h: toggle}
   l: [gaming_toggle]
