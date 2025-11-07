@@ -343,7 +343,7 @@
         activate_gaming {
             bindings = <&to 1>;
             key-positions = <14 18>;
-            layers = <2>;
+            layers = <0>;
         };
 
         deact_gaming_layer {
