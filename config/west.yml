@@ -6,10 +6,10 @@ manifest:
       url-base: https://github.com/GPeye
     - name: tokyo2006
       url-base: https://github.com/tokyo2006
-    # - name: englmaxi
-    #   url-base: https://github.com/englmaxi
-    - name: carrefinho
-      url-base: https://github.com/carrefinho
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
+    # - name: carrefinho
+    #   url-base: https://github.com/carrefinho
   projects:
     - name: hammerbeam-slideshow
       remote: gpeye
