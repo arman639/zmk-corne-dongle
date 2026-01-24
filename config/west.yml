@@ -28,7 +28,7 @@ manifest:
     #   revision: v0.3
     - name: zmk-dongle-screen
       remote: janpfischer
-      revision: v0.3
+      revision: main
     # - name: prospector
     #   remote: carrefinho
     #   revision: main
