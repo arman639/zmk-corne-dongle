@@ -8,10 +8,6 @@ manifest:
       url-base: https://github.com/tokyo2006
     - name: englmaxi
       url-base: https://github.com/englmaxi
-    # - name: janpfischer
-    #   url-base: https://github.com/janpfischer
-    # - name: carrefinho
-    #   url-base: https://github.com/carrefinho
   projects:
     - name: hammerbeam-slideshow
       remote: gpeye
@@ -26,11 +22,5 @@ manifest:
     - name: zmk-dongle-display
       remote: englmaxi
       revision: v0.3
-    # - name: zmk-dongle-screen
-    #   remote: janpfischer
-    #   revision: 0.1.1
-    # - name: prospector
-    #   remote: carrefinho
-    #   revision: main
   self:
     path: config
