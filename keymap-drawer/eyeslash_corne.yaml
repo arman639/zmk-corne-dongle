@@ -49,55 +49,6 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: OSL R, h: NAV}
   - $$mdi:apple-keyboard-option$$
-  gaming_toggle:
-  - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - gaming
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - '&super_alttab_macro'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -828,10 +779,59 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  gaming_toggle:
+  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - gaming
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [1, 5]
