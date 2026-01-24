@@ -6,10 +6,10 @@ manifest:
       url-base: https://github.com/GPeye
     - name: tokyo2006
       url-base: https://github.com/tokyo2006
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
-    # - name: janpfischer
-    #   url-base: https://github.com/janpfischer
+    # - name: englmaxi
+    #   url-base: https://github.com/englmaxi
+    - name: janpfischer
+      url-base: https://github.com/janpfischer
     # - name: carrefinho
     #   url-base: https://github.com/carrefinho
   projects:
@@ -23,12 +23,12 @@ manifest:
     - name: prospector-zmk-module                 # <--- and these
       remote: tokyo2006                          # <---
       revision: 935ce92e1fff8cc1dc7b15354f8270af7cab0c07 # branch: change_spi2
-    - name: zmk-dongle-display
-      remote: englmaxi
-      revision: v0.3
-    # - name: zmk-dongle-screen
-    #   remote: janpfischer
-    #   revision: 0.1.1
+    # - name: zmk-dongle-display
+    #   remote: englmaxi
+    #   revision: v0.3
+    - name: zmk-dongle-screen
+      remote: janpfischer
+      revision: 0.1.1
     # - name: prospector
     #   remote: carrefinho
     #   revision: main
