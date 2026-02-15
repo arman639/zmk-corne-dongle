@@ -493,8 +493,8 @@ layers:
   win_layer:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Alt+F4
-  - {t: 'Gui+$$mdi:arrow-left-bold$$', type: held}
-  - Gui+$$mdi:arrow-up-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - Gui+$$mdi:arrow-left-bold$$
   - Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -507,8 +507,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PRINTSCREEN
   - Gui+Sft+S
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Gui+$$mdi:arrow-down-bold$$
+  - Gui+$$mdi:arrow-up-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
