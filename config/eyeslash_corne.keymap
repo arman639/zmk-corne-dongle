@@ -219,60 +219,6 @@
 
             label = "hrm_hold_macro";
         };
-
-        delete_line_macro: delete_line_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp HOME>,
-                <&macro_press>,
-                <&kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp END>,
-                <&macro_release>,
-                <&kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp BACKSPACE &kp BACKSPACE>;
-
-            label = "DELETE_LINE_MACRO";
-        };
-
-        move_arrow_10_macro: move_arrow_20_macro {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_tap>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat>;
-
-            label = "MOVE_ARROW_20_MACRO";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        move_arrow_20_macro: move_arrow_10_macro {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_tap>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat>;
-
-            label = "MOVE_ARROW_10_MACRO";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
-
-        move_arrow_5_macro: move_arrow_5_macro {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_tap>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &key_repeat &key_repeat &key_repeat &key_repeat>;
-
-            label = "MOVE_ARROW_5_MACRO";
-            wait-ms = <5>;
-            tap-ms = <5>;
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -341,7 +287,7 @@
         };
 
         activate_gaming {
-            bindings = <&to 16>;
+            bindings = <&to 13>;
             key-positions = <14 18>;
             layers = <0>;
         };
@@ -349,7 +295,7 @@
         deact_gaming_layer {
             bindings = <&to 0>;
             key-positions = <14 18>;
-            layers = <16>;
+            layers = <13>;
         };
     };
 
@@ -383,10 +329,10 @@
         nav_layer {
             display-name = "NAV";
             bindings = <
-&kp TAB     &none         &mo 13              &mo 12      &none      &none                                    &mmv MOVE_UP                     &kp LC(Y)           &kp HOME   &kp UP     &kp END    &kp DELETE            &none
+&kp TAB     &none         &mo 0               &mo 0       &none      &none                                    &mmv MOVE_UP                     &kp LC(Y)           &kp HOME   &kp UP     &kp END    &kp DELETE            &none
 &kp ESCAPE  &kp LEFT_GUI  &mt LALT LC(LS(S))  &kp RSHIFT  &kp LCTRL  &kp LG(T)                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp TAB             &kp LEFT   &kp DOWN   &kp RIGHT  &kp BSPC              &msc SCRL_UP
 &trans      &kp LC(Z)     &kp LC(X)           &kp LC(C)   &kp LC(V)  &none      &kp C_MUTE                    &mmv MOVE_DOWN                   &delete_line_macro  &kp PG_UP  &kp PG_DN  &kp RET    &comment_ignore_mods  &msc SCRL_DOWN
-                                              &trans      &mo 11     &trans                                                                    &lt 1 UNDERSCORE    &trans     &trans
+                                              &trans      &mo 0      &trans                                                                    &lt 1 UNDERSCORE    &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -408,7 +354,7 @@
             display-name = "OSL L";
             bindings = <
 &trans         &trans                            &sl 10                   &sl 8                      &trans                     &none                                      &mmv MOVE_UP                     &trans  &studio_unlock  &trans  &trans  &trans  &trans
-&to 0          &hrm_hold_macro LS(LEFT_CONTROL)  &hrm_behavior LALT LALT  &hrm_behavior LSHFT LSHFT  &hrm_behavior LCTRL LCTRL  &sl 14                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans          &trans  &trans  &trans  &trans
+&to 0          &hrm_hold_macro LS(LEFT_CONTROL)  &hrm_behavior LALT LALT  &hrm_behavior LSHFT LSHFT  &hrm_behavior LCTRL LCTRL  &sl 11                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans          &trans  &trans  &trans  &trans
 &kp RC(RSHFT)  &kp LC(HOME)                      &kp LC(END)              &none                      &none                      &kp PAUSE_BREAK  &trans                    &mmv MOVE_DOWN                   &trans  &trans          &trans  &trans  &trans  &trans
                                                                           &trans                     &trans                     &mo 9                                                                       &trans  &trans          &trans
             >;
@@ -478,33 +424,6 @@
             label = "win_layer";
         };
 
-        super_nav10_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans                                          &super_arrow_behavior UP_ARROW UP_ARROW      &trans                                            &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &super_arrow_x2_behavior LEFT_ARROW LEFT_ARROW  &super_arrow_behavior DOWN_ARROW DOWN_ARROW  &super_arrow_x2_behavior RIGHT_ARROW RIGHT_ARROW  &delete_line_macro  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans                                          &trans                                       &trans                                            &trans              &trans
-                        &trans  &trans  &trans                                    &trans  &trans                                          &trans
-            >;
-        };
-
-        super_nav20_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans                                          &super_arrow_x2_behavior UP_ARROW UP_ARROW      &trans                                            &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &super_arrow_x2_behavior LEFT_ARROW LEFT_ARROW  &super_arrow_x2_behavior DOWN_ARROW DOWN_ARROW  &super_arrow_x2_behavior RIGHT_ARROW RIGHT_ARROW  &delete_line_macro  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans                                          &trans                                          &trans                                            &trans              &trans
-                        &trans  &trans  &trans                                    &trans  &trans                                          &trans
-            >;
-        };
-
-        super_nav5_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans                                          &super_arrow_xhalf_behavior UP_ARROW UP_ARROW      &trans                                            &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &super_arrow_x2_behavior LEFT_ARROW LEFT_ARROW  &super_arrow_xhalf_behavior DOWN_ARROW DOWN_ARROW  &super_arrow_x2_behavior RIGHT_ARROW RIGHT_ARROW  &delete_line_macro  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans                                          &trans                                             &trans                                            &trans              &trans
-                        &trans  &trans  &trans                                    &trans  &trans                                          &trans
-            >;
-        };
-
         Toggle_Layer {
             bindings = <
 &trans  &trans  &trans          &trans        &trans  &trans                    &trans          &trans  &trans          &kp INSERT  &trans  &trans  &trans
@@ -530,7 +449,7 @@
 &kp ESCAPE  &trans  &trans  &trans  &trans  &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans  &trans  &trans  &trans  &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans  &mo 15  &kp SPACE                                    &trans  &none   &trans
+                            &trans  &mo 12  &kp SPACE                                    &trans  &none   &trans
             >;
         };
     };
