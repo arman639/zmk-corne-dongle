@@ -91,33 +91,6 @@
             lazy;
             quick-release;
         };
-
-        super_arrow_behavior: super_arrow_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SUPER_ARROW_BEHAVIOR";
-            bindings = <&kp>, <&move_arrow_10_macro>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        super_arrow_x2_behavior: super_arrow_x2_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SUPER_ARROW_X2_BEHAVIOR";
-            bindings = <&kp>, <&move_arrow_20_macro>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        super_arrow_xhalf_behavior: super_arrow_xhalf_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SUPER_ARROW_XHALF_BEHAVIOR";
-            bindings = <&kp>, <&move_arrow_5_macro>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
     };
 
     macros {
