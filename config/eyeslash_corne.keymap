@@ -131,22 +131,6 @@
                 <&kp TAB &to 2>;
         };
 
-        select_line_macro: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp HOME>,
-                <&macro_press>,
-                <&kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp END>,
-                <&macro_release>,
-                <&kp LEFT_SHIFT>;
-
-            label = "NEW_MACRO";
-        };
-
         mo_release_alt_macro: alt_2_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -329,10 +313,10 @@
         nav_layer {
             display-name = "NAV";
             bindings = <
-&kp TAB     &none         &mo 0               &mo 0       &none      &none                                    &mmv MOVE_UP                     &kp LC(Y)           &kp HOME   &kp UP     &kp END    &kp DELETE            &none
-&kp ESCAPE  &kp LEFT_GUI  &mt LALT LC(LS(S))  &kp RSHIFT  &kp LCTRL  &kp LG(T)                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp TAB             &kp LEFT   &kp DOWN   &kp RIGHT  &kp BSPC              &msc SCRL_UP
-&trans      &kp LC(Z)     &kp LC(X)           &kp LC(C)   &kp LC(V)  &none      &kp C_MUTE                    &mmv MOVE_DOWN                   &delete_line_macro  &kp PG_UP  &kp PG_DN  &kp RET    &comment_ignore_mods  &msc SCRL_DOWN
-                                              &trans      &mo 0      &trans                                                                    &lt 1 UNDERSCORE    &trans     &trans
+&kp TAB     &none         &mo 0               &mo 0       &none      &none                                    &mmv MOVE_UP                     &kp LC(Y)         &kp HOME   &kp UP     &kp END    &kp DELETE            &none
+&kp ESCAPE  &kp LEFT_GUI  &mt LALT LC(LS(S))  &kp RSHIFT  &kp LCTRL  &kp LG(T)                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp TAB           &kp LEFT   &kp DOWN   &kp RIGHT  &kp BSPC              &msc SCRL_UP
+&trans      &kp LC(Z)     &kp LC(X)           &kp LC(C)   &kp LC(V)  &none      &kp C_MUTE                    &mmv MOVE_DOWN                   &trans            &kp PG_UP  &kp PG_DN  &kp RET    &comment_ignore_mods  &msc SCRL_DOWN
+                                              &trans      &mo 0      &trans                                                                    &lt 1 UNDERSCORE  &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
