@@ -294,7 +294,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  locked:
+  LOCK:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -588,7 +588,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  gaming:
+  GAMING:
   - $$mdi:keyboard-tab$$
   - {t: '1', s: '!'}
   - '2'
@@ -637,7 +637,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  gaming_toggle:
+  GAME_TOG:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -681,7 +681,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - gaming
+  - GAMING
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -689,9 +689,9 @@ layers:
 combos:
 - p: [1, 5]
   k: {t: QWERTY, h: toggle}
-  l: [locked]
+  l: [LOCK]
 - p: [1, 5]
-  k: {t: locked, h: toggle}
+  k: {t: LOCK, h: toggle}
   l: [QWERTY]
 - p: [38, 39]
   k: {t: OSL R, h: '$$mdi:gesture-tap-hold$$'}
@@ -712,8 +712,8 @@ combos:
   k: {t: '$$mdi:backup-restore$$', type: bootloader}
   l: [OSL R]
 - p: [14, 18]
-  k: {t: gaming_toggle, h: toggle}
+  k: {t: GAME_TOG, h: toggle}
   l: [QWERTY]
 - p: [14, 18]
   k: {t: QWERTY, h: toggle}
-  l: [gaming_toggle]
+  l: [GAME_TOG]
