@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyeslash_corne}
 layers:
   QWERTY:
-  - {t: '$$mdi:keyboard-esc$$', h: multimedia_layer_sss}
+  - {t: '$$mdi:keyboard-esc$$', h: multimedia}
   - Q
   - W
   - E
@@ -441,7 +441,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  multimedia_layer_sss:
+  multimedia:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
